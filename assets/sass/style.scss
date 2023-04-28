@@ -75,7 +75,7 @@ header{
                 font-weight: 900;
                 color: #fff;
             }
-            a{
+            .my-btn{
                 position: relative;
                 z-index: 2;
                 background-color: #f42c37;
@@ -92,22 +92,238 @@ header{
                     content: '';
                     position: absolute;
                     z-index: -1;
-                    width: 30px;
-                    height: 30px;
+                    width: 10px;
+                    height: 10px;
                     background-color: #000;
                     border-radius: 50%;
                     opacity: 0;
-                    transition: all 500ms;
+                    transition: .5s;
                 }
                 &:hover{
                     &::after{
+                        transition: all .7s ease-in;
                         opacity: 1;
-                        border-radius: 0;
-                        width: 100%;
-                        height: 100%;
+                        // border-radius: 0;
+                        width: 300px;
+                        height: 550%;
                     }
                 }
             }
         }
     }
 }
+.absolute{
+    position: fixed;
+    width: 110%;
+    height: 100vh;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    transition: all 1s;
+    opacity: 0;
+    overflow: hidden;
+    transform: translate(-50% -50%);
+    .close{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        border: 1px solid rgb(177, 177, 177);
+        padding: 6px 8px;
+        border-radius: 50%;
+        background-color: #fff;
+        outline: none;
+        font-size: 22px;
+        transition: all .4s;
+        &:hover{
+            border-color: rgb(92, 92, 92);
+        }
+    }
+    .form-con{
+        width: 80%;
+        height: 30px;
+        border-bottom: 2px solid #000;
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input{
+            width: 100%;
+            height: 80%;
+            padding: 20px 0;
+            margin-bottom: 15px;
+            border: none;
+            outline: none;
+            font-size: 30px;
+        }
+        button{
+            border: none;
+            background-color: #fff;
+            outline: none;
+            font-size: 24px;
+        }
+    }
+}
+.ind99{
+    z-index: 99 !important;
+    width: 100% !important;
+    opacity: 1 !important;
+}
+.shop-card{
+    width: 350px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 5;
+    opacity: 0;
+    transition: all .4s;
+    i{
+        font-size: 80px;
+        color: rgb(203, 203, 203);
+    }
+    p{
+        font-size: 24px;
+        font-weight: 600;
+        color: rgb(189, 189, 189);
+    }
+}
+.shop-card-add{
+    transform: translateY(-50px);
+    opacity: 1;
+}
+#cards{
+   .col-12{
+    .card{
+        padding: 40px 10px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        p{
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        h5{
+            color: #fff;
+            font-size: 27px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        h2{
+            color: #ffffff70;
+            font-size: 37px;
+            padding-bottom: 15px;
+            font-weight: 800;
+        }
+        a{
+            position: relative;
+            z-index: 2;
+            background-color: #fff;
+            color: #fff;
+            width: 120px;
+            height: 40px;
+            border-radius:42px 42px;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items:center ;
+            overflow: hidden;
+            font-weight: 300;
+            &::after{
+                content: '';
+                position: absolute;
+                z-index: -1;
+                width: 10px;
+                height: 10px;
+                background-color: #000;
+                border-radius: 50%;
+                opacity: 0;
+                transition: .5s;
+        }
+    }
+}
+    .earphone{
+        background-image:url("../images/Mask-Group-5-1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #222222;
+        a{
+            background-color: #f42c37;
+        }
+    }
+    .gadgets{
+        background-image:url("../images/clay-apple-watch-mockup-07.png") ;
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-color: #fec52e;
+        a{
+            background-color: #fff;
+            color: #fec52e;
+        }
+    }
+    .laptop{
+        background-image:url("../images/Laptop.png") ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #f42c37;
+        a{
+            background-color: #fff;
+            color: #f42c37;
+        }
+        }
+    .speaker{
+        background-image: url("../images/P6YUXW1.png");
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: 300px;
+        background-color: #157eff;
+        a{
+            background-color: #fff;
+            color: #157eff;
+        }
+    }
+
+    .oculus{
+        background-image: url("../images/man-wearing-virtual-reality-headset-at-home-D7AYCTV-2.png");
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size: 260px;
+        background-color: #2dd06f;
+        a{
+            background-color: #fff;
+            color: #2dd06f;
+        }
+    }
+    .console{
+        background-image: url("../images/NicePng_ps4-png_193822.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: #ededee;
+        a{
+            background-color: #f42c37;
+        }
+        h2{
+            color: #fff;
+        }
+        h5{
+            color: #222;
+        }
+    }
+   }
+  }

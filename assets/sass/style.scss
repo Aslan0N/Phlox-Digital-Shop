@@ -327,3 +327,44 @@ header{
     }
    }
   }
+
+#sale{
+    .container{
+        background-color: #f42c37;
+        color: #fff;
+        margin-top: 20px;
+        border-radius: 18px;
+        padding: 10px;
+        #first-sale{
+            p{
+                font-size: 14px;
+                margin: 50px 0;
+            }
+            span{
+                font-size: 44px;
+                font-weight: 800;
+                margin: 50px 0;
+            }
+        }
+        #second-sale{
+            p{
+                font-size: 14px;
+                margin: 20px 0;
+            }
+            span{
+                font-size: 44px;
+                font-weight: 800;
+            }
+            a{
+                background-color: #fff;
+                color: #f42c37;
+                width: 220px;
+                height: 50px;
+                border-radius:48px 48px;
+                font-weight: 500;
+                padding: 8px 20px;
+                margin: 15px 0;
+            }
+        }
+    }
+}
